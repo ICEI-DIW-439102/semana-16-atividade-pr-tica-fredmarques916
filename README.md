@@ -1,6 +1,6 @@
 # Trabalho Prático - Semana 16 (CRUD com JSON Server)
 
-A partir dos dados que você tem no seu projeto, trabalhamos a integração com um back-end fake utilizando o JSON-Server, a fim de criar uma aplicação dinâmica que consome uma API RESTful completa com operações CRUD (Create, Read, Update, Delete) via Fetch API.
+A partir dos dados do projeto, fiz a integração com um back-end fake utilizando o JSON-Server, a fim de criar uma aplicação dinâmica que consome uma API RESTful com operações CRUD (Create, Read, Update, Delete) via Fetch API.
 
 ## Informações do trabalho
 
@@ -55,16 +55,16 @@ A partir dos dados que você tem no seu projeto, trabalhamos a integração com 
 Abaixo seguem os prints dos testes das requisições via cliente REST, englobando as quatro operações fundamentais do protocolo HTTP:
 
 **GET** (Listagem)
-![GET Test](public/assets/img/test_get.png)
+![GET Test](public/assets/img/get.png)
 
 **POST** (Criação)
-![POST Test](public/assets/img/test_post.png)
+![POST Test](public/assets/img/post.png)
 
 **PUT** (Atualização)
-![PUT Test](public/assets/img/test_put.png)
+![PUT Test](public/assets/img/put.png)
 
 **DELETE** (Remoção)
-![DELETE Test](public/assets/img/test_delete.png)
+![DELETE Test](public/assets/img/delete.png)
 
 ## Print da aba Network (Requisições Fetch/XHR)
 
