@@ -1,24 +1,72 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jbkAuwcN)
+# Trabalho Prático - Semana 16 (CRUD com JSON Server)
 
-# Trabalho Prático - Semana 14
-
-A partir dos dados que você tem no seu projeto, vamos trabalhar formas de apresentação que representem de forma clara e interativa essas informações. Você poderá usar gráficos (barra, linha, pizza), mapas, calendários ou outras formas de visualização. Seu desafio é entregar uma página Web que organize, processe e exiba os dados de forma compreensível e esteticamente agradável.
-
-Com base nos tipos de projetos escohidos, você deve propor **visualizações que estimulem a interpretação, agrupamento e exibição criativa dos dados**, trabalhando tanto a lógica quanto o design da aplicação.
-
-Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fullcalendar.io/), [Chart.js](https://www.chartjs.org/), [Mapbox](https://docs.mapbox.com/api/), para citar algumas.
+A partir dos dados que você tem no seu projeto, trabalhamos a integração com um back-end fake utilizando o JSON-Server, a fim de criar uma aplicação dinâmica que consome uma API RESTful completa com operações CRUD (Create, Read, Update, Delete) via Fetch API.
 
 ## Informações do trabalho
 
-- Nome: Frederico Marcos de Paula Marques
-- Matricula: 907680
-- Proposta de projeto escolhida: Eventos (Calendário Interativo)
-- Breve descrição sobre seu projeto: Uma aplicação onde é possível gerenciar eventos (CRUD - Cadastro de Eventos) que são salvos localmente utilizando o JSON-Server, juntamente de uma tela de "Apresentação" dinâmica. Esta apresentação utiliza a biblioteca **FullCalendar** para renderizar um calendário completo, distribuindo os eventos visualmente de acordo com a data de início e fim e customizando as cores pela categoria do evento.
+- **Nome**: Frederico Marcos de Paula Marques
+- **Matrícula**: 907680
+- **Proposta de projeto escolhida**: Eventos (Calendário Interativo)
+- **Breve descrição sobre seu projeto**: Uma aplicação onde é possível gerenciar eventos (CRUD - Cadastro de Eventos) salvos localmente utilizando o JSON-Server. A aplicação consome a API RESTful de forma assíncrona, usando a Fetch API para a manipulação dos dados, e reflete as alterações dinamicamente em uma tela de "Apresentação" (detalhes) baseada na biblioteca FullCalendar.
 
-**Print da tela com a implementação**
+## Prints da Aplicação
 
-Abaixo estão as capturas de tela mostrando a nova funcionalidade de calendário integrada aos dados mockados do JSON-Server:
+### Página Inicial / Cadastro (CRUD)
+![Formulário de Eventos e Lista](public/assets/img/print1.png)
 
+### Página de Detalhes (Apresentação Dinâmica)
 ![Calendário](public/assets/img/print2.png)
 
-![Formulário de Eventos](public/assets/img/print1.png)
+## Estrutura de Dados (db.json)
+
+```json
+{
+  "eventos": [
+    {
+      "id": "1",
+      "title": "Workshop de React",
+      "start": "2026-07-10",
+      "end": "2026-07-11",
+      "type": "workshop",
+      "location": "Belo Horizonte"
+    },
+    {
+      "id": "2",
+      "title": "Conferência de IA",
+      "start": "2026-07-15",
+      "end": "2026-07-16",
+      "type": "conferencia",
+      "location": "São Paulo"
+    },
+    {
+      "id": "3",
+      "title": "Meetup de Node.js",
+      "start": "2026-07-20",
+      "end": "2026-07-20",
+      "type": "meetup",
+      "location": "Rio de Janeiro"
+    }
+  ]
+}
+```
+
+## Testes da API (JSONServer)
+
+Abaixo seguem os prints dos testes das requisições via cliente REST, englobando as quatro operações fundamentais do protocolo HTTP:
+
+**GET** (Listagem)
+![GET Test](public/assets/img/test_get.png)
+
+**POST** (Criação)
+![POST Test](public/assets/img/test_post.png)
+
+**PUT** (Atualização)
+![PUT Test](public/assets/img/test_put.png)
+
+**DELETE** (Remoção)
+![DELETE Test](public/assets/img/test_delete.png)
+
+## Print da aba Network (Requisições Fetch/XHR)
+
+Confirmação das requisições GET e POST feitas a partir do formulário de cadastro, visíveis na aba Network das DevTools:
+![Network Fetch POST/GET](public/assets/img/print_network.png)
