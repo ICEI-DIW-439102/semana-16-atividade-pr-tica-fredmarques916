@@ -6,13 +6,32 @@
       "senha": "123",
       "nome": "Administrador do Sistema",
       "email": "admin@abc.com"
+    }
+  ],
+  "eventos": [
+    {
+      "id": "1",
+      "title": "Workshop de React",
+      "start": "2026-07-10",
+      "end": "2026-07-11",
+      "type": "workshop",
+      "location": "Belo Horizonte"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "title": "Conferência de IA",
+      "start": "2026-07-15",
+      "end": "2026-07-16",
+      "type": "conferencia",
+      "location": "São Paulo"
+    },
+    {
+      "id": "3",
+      "title": "Meetup de Node.js",
+      "start": "2026-07-20",
+      "end": "2026-07-20",
+      "type": "meetup",
+      "location": "Rio de Janeiro"
     }
   ]
 }

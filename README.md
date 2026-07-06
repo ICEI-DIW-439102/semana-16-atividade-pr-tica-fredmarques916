@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HRjrL6No)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jbkAuwcN)
 
 # Trabalho Prático - Semana 14
 
@@ -10,15 +10,15 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Frederico Marcos de Paula Marques
+- Matricula: 907680
+- Proposta de projeto escolhida: Eventos (Calendário Interativo)
+- Breve descrição sobre seu projeto: Uma aplicação onde é possível gerenciar eventos (CRUD - Cadastro de Eventos) que são salvos localmente utilizando o JSON-Server, juntamente de uma tela de "Apresentação" dinâmica. Esta apresentação utiliza a biblioteca **FullCalendar** para renderizar um calendário completo, distribuindo os eventos visualmente de acordo com a data de início e fim e customizando as cores pela categoria do evento.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+Abaixo estão as capturas de tela mostrando a nova funcionalidade de calendário integrada aos dados mockados do JSON-Server:
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+![Calendário](public/assets/img/print2.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![Formulário de Eventos](public/assets/img/print1.png)
